@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+        
+    }
+
+        h1,h2,h3{
+            font-family: 'Poppins', sans-serif;
+        }
+        p{
+            font-family: 'Poppins', sans-serif;
+            color: rgba(108, 108, 108, 1);
+
+        }
+        section{
+            margin: 20px ;
+        } 
+
+        .container{
+            width: 1050px;
+            margin: 20px auto;
+            padding: 20px ;
+        
+        }
+
+        /* header section start */
+
+
+        header{
+            margin: 0%;
+            padding: 0%;
+            background-color:#562EFF;
+            width: 100vw;
+        }
+        .header-section,.header-section>.container{
+
+            background-color:#562EFF;
+        }
+        .players-section{
+            margin-bottom: 70px;
+            margin-top: 40px;
+        }
+        .hero-section,.highlights{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 40px;
+
+        
+
+        }
+        .hero-section  h1{
+            font-family: 'Poppins',sans-serif;
+            font-weight: 700;
+            font-size:64px ;
+            margin-bottom: 8px;
+        }
+        .left{
+            padding: 10px;
+            margin-right: 20px;
+        }
+        .banner img{
+            width: 500px;
+            min-width: 360px;
+        }
+
+
+        /* animation start */
+
+        @keyframes move {
+        from { transform: scale(1);}
+        to { transform: scale(1.1);}
+        }
+
+        header:hover .banner>img{
+            animation: move ease-in-out 3s infinite;
+        }
+        /* animation end */
+
+
+        .button {
+            /* text-decoration: none; */
+            background-image: linear-gradient(to right, #e73878, #db0b57f6);
+            padding: 10px 24px;
+            color: white;
+            font-weight: 500;
+            border-radius: 1px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            /* line-height: 24px; */
+            margin: 0 2px;
+            font-family: 'Poppins', sans-serif;
+        
+            
+        }
+        .button>a{
+            text-decoration: none;
+            color:blanchedalmond ;
+        }
+        .button:hover i{
+            color: rgb(10, 182, 173);
+            margin-left:8px;
+            font-size: 20px; transition: 1s;
+        }
+        .button:hover span{
+            
+            color: rgb(138, 241, 173);
+            margin-right: 8px;transition:  1s;
+        }
+
+        /* header section end */
+
+        /* -----------------bonus section-------------  */
+
+
+        main{
+            position: relative;
+        }
+        .top-up{
+            background-color: rgba(68, 87, 190, 0.295);
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            font-size: 40px;
+        }
+
+        /* -----------------bonus section-------------  */
+
+
+        /* players  section start */
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap: 27px;
+            grid-row-gap: 27px;
+        }
+        .card{
+            width: 300px;
+        
+        box-shadow: 0px 0px 40px rgba(0,0,0,0.15);
+        padding: 15px ;
+
+        }
+        .card img{
+            width: 100%;
+        }
+        .card h3{
+            font-size: 28px;
+            font-weight: 700;
+            color: rgba(24, 25, 31, 1);
+            
+        }
+
+        /* players section end */
+        .highlights h2{
+            font-family: 'Poppins',sans-serif;
+            font-weight: 600;
+            font-size:48px ;
+            margin: 4px;
+        }
+        .highlights p{
+            padding: 0;
+        margin: 8px 2px;
+        padding-right: 40px;
+        margin-right: 20px;
+        }
+
+
+
+
+
+
+
+        .contact-us {
+            margin: 2% auto;
+           
+        }
+        .contact-form{
+            width:60% ;
+            margin:  auto;
+            padding: 20px;
+        }
+        input[type=text] ,input[type=email] ,textarea {
+            width: 100%;
+            font-family: ;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: ;
+            
+          }
+          input[type=submit] {
+            background-image: linear-gradient( rgb(165, 21, 158), rgba(224, 9, 153, 0.644));
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+          } 
+          .contact-text{
+              text-align: center;
+          }
+         
+
+        /* footer section start */
+
+        .footer-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+                }
+            .footer-logo{
+                max-width: 480px;
+
+            }
+            .footer-logo img{
+                width: 100%;
+            }
+            .social-icons i{
+
+            
+                margin: 0 14px;
+                padding:7px;
+                border-radius: 50%;
+                background: #969BAB 100%;
+                text-align: center;
+                font-size: 17px;
+                color:rgba(66, 66, 66, 0.829);
+                
+
+            }
+                footer>p{
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            }
+
+
+/* footer section end */
+
+
+
+
+/* medium device */
+@media (max-width:800px){
+
+
+    h1,h2{
+
+        font-size: 26px;
+    }
+    h3{
+        font-size: 22px;
+     }
+     p{
+         font-size: 16px;
+     }
+
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+        grid-column-gap: 15px;
+        
+        }
+        .cards{
+            width: 100%;
+        }
+        .container{
+            box-sizing: border-box;
+            max-width: 700px;
+            padding: 5px 5px;
+
+        }
+        .hero-section,.highlights{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+           
+           
+        }
+        .left{
+            text-align: center;
+        }
+        .banner{
+            margin-top: 20px;
+            
+        }
+
+       
+
+} 
+
+
+/* mobile device  */
+
+@media (max-width:500px) {
+
+    h1,h2{
+
+        font-size: 20px;
+    }
+    h3{
+        font-size: 20px;
+     }
+     p{
+         font-size: 16px;
+     }
+
+
+    .cards{
+    display: grid;
+    grid-template-columns: repeat(1,1fr); 
+    
+    }
+    .cards{
+        width: 100%;
+    }
+   
+    .card{
+     max-width: 300px;
+    }
+   
+    .container{
+        width: 400px;
+        margin: auto;
+    }
+    .hero-section,.highlights{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        overflow: hidden;
+       
+       
+    }
+    .banner{
+        margin-top: 20px;
+        
+    }
+    .banner img{
+        width: 300px;
+    }
+   
+} 
